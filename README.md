@@ -16,7 +16,10 @@ imputed_cistrome predicts transcription factors binding sites based on chromatin
 * giggle
 ## Usage
 ### modify the config file based on your environment
-There are 2 example yaml config files (for human and mouse respectively). Please use them as templates and modify accordingly.
+There are 2 example yaml config files (for human and mouse respectively). Please use them as templates and modify accordingly. After modifying the config file, run
+```shell
+python yaml_config_cistrome.py
+```
 ### modify 'Snakefile' based on your target output
 Here are some examples:
 #### 1. train the models for a list of TFs
@@ -51,4 +54,13 @@ rule all:
               chrom = config['chrom_all']
         )
 ```
-
+### execute the pipeline
+It is recommended to run the script on a cluster.
+First, dry run the pipeline to check whether there are problems:
+```shell
+snakemake -n
+```
+Then, submit jobs by:
+```shell
+snakemake -j JOB_NUM  --cluster-config cluster.yaml --latency-wait 60 --cluster "sbatch -J {cluster.job_name} -p {cluster.partition} -n {cluster.n}  -t {cluster.time} --mem {cluster.mem_mb}"
+```
