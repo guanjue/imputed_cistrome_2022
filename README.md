@@ -2,6 +2,7 @@
 ## about
 imputed_cistrome predicts transcription factors binding sites based on chromatin accessibility and DNA sequence motif features. This project is still in progress.
 ## Dependences
+* snakemake
 * numpy
 * pandas
 * h5py
