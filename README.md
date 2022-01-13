@@ -41,11 +41,14 @@ bash run_submit.done.sh
 ```
 ### Step2.0.1: select imputed TFs, write them into the 'TF_select.tmp.txt' file
 target_TF_list='TF_select.tmp.txt'
+
 ### Step2.0.2: select impute cell types
 test_ct='NONE_B_LYMPHOCYTE_BLOOD'
+
 ### Step2.0.3: filter to select reliable TF list
 reliable_TFs_list=/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/reliable_TFs.txt
 time bash get_thisRun_list.sh $target_TF_list $test_ct $reliable_TFs_list
+
 ### Step2.0.4: get impute_cistrome pipeline input parameters: impute TF; training cell type; testing cell type
 cat TF_train_test.thisRun.list.txt
 
