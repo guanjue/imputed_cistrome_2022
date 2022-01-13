@@ -1,0 +1,69 @@
+ATAC_long_short: false
+CA_cluster_mode: false
+TF_sample_info_file: /liulab/jfan/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls
+bam_file_path: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/bam_files
+batch: 10000000
+cell_types:
+- '49062'
+- '49063'
+- '49067'
+- '49068'
+- '49074'
+- '49079'
+- '45030'
+- '45031'
+- '45032'
+- '45033'
+- '45034'
+- '45035'
+chrom_all:
+- chr1
+- chr2
+- chr3
+- chr4
+- chr5
+- chr6
+- chr7
+- chr8
+- chr9
+- chr10
+- chr11
+- chr12
+- chr13
+- chr14
+- chr15
+- chr16
+- chr17
+- chr18
+- chr19
+- chr20
+- chr21
+- chr22
+- chrX
+chrom_sets:
+  chrom_setA:
+  - chr1
+  chrom_setB:
+  - chr2
+  chrom_set_test:
+  - chr2
+chrom_size_file: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_hg38_config/hg38.chrom.sizes
+cistromeDB_narrow_peak_path: /liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_peaks
+cluster_info_file: /liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/human_peaks_RP_DNaseseq_with_log_QN_hierarchical_sample_80_clusters_reannotated_missing_bad_samples_removed.csv
+genome: hg38
+genome_sequence_fa: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_hg38_config/hg38.fa
+giggle_index_path: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/index_all
+giggle_path: /liulab/jfan/test/giggle/bin/giggle
+motif_database_xml: /liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/HOCOMOCOv11_full_pwm_HUMAN_mono.xml
+motif_pwm_path: /liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/motifs/
+peak_file_path: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/peak
+reference_cell_type: '40606'
+regions_all_file: /liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/hg38_regions_all_sorted.bed
+selected_cluster: []
+seqpos_env_path: /liulab/jfan/miniconda3/envs/seqpos
+test_cell_types_regions_label_name: test.labels.tsv
+test_cell_types_regions_label_path: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/label/test
+tf_names:
+- FOXA1
+training_cell_types_regions_label_name: train.labels.tsv
+training_cell_types_regions_label_path: /liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/label/train
