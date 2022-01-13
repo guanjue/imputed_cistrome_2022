@@ -22,17 +22,15 @@ pip install torch
 
 ### test run
 ```
+### git clone scripts
 cd /liulab/gjxiang/projects/test_impute_cistrome
 git clone https://github.com/guanjue/impute_cistrome_2022.git
-```
-
-### Step1: enter working directory
-### Step2: Setting up parameters in 'run_submit.done.sh' 
-### Step3: Run imputed_cistrome_2022 
-```
+### Step1: enter working directory & copy input parameter files
 mkdir test_GATA1
 cp /liulab/gjxiang/projects/test_impute_cistrome/impute_cistrome_2022/runme/* test_GATA1/
+### Step2: Setting up parameters in 'run_submit.done.sh'
 cd test_GATA1
+### Step3: Run imputed_cistrome_2022
 bash run_submit.done.sh
 ```
 
