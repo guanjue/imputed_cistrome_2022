@@ -23,6 +23,9 @@ pksumit_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_summi
 ### TF ChIP-seq peak files
 pk_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_peaks'
 
+### reliable TF cell type list
+reliable_TF_ct_list='/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/reliable_TFs.txt'
+
 
 
 ############ packages
