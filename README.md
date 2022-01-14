@@ -1,4 +1,4 @@
-# impute_cistrome_GX
+# impute_cistrome_2022
 
 ## Install conda env
 ##### conda-4.11.0 update at 01/13/2022
