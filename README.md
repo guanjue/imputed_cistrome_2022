@@ -12,7 +12,7 @@ conda create -n impute_cistrome_2022 python=3.9 r=4.1 fire pandas numpy scipy h5
 seaborn hyperopt pybedtools pyBigWig lightgbm=3.1.1 pyyaml
 ```
 
-##### activate 'impute_cistrome_2022' conda environment and install two packages that is not available in 'conda create' command
+##### Activate 'impute_cistrome_2022' conda environment and install two packages that is not available in 'conda create' command
 ```
 conda activate impute_cistrome_2022
 pip install sklearn
@@ -44,7 +44,7 @@ test_ct=NONE_B_LYMPHOCYTE_BLOOD
 user_train_DNase_list=F
 user_test_DNase_list=F
 
-### set working directory
+### Set working directory
 working_dir0='/liulab/gjxiang/projects/test_impute_cistrome/test_GATA1'
 ### set script directory
 script_dir='/liulab/gjxiang/projects/test_impute_cistrome/imputed_cistrome_2022'
