@@ -1,18 +1,37 @@
 ############ Input files
 ### genome info fasta chrom size
-genome_info_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_hg38_config'
+genome_info_hg38_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_hg38_config'
+
+### whole genome 200bp slide bin (50 sliding window)
+##### human hg38
+bin_hg38='/liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/hg38_regions_all_sorted.bed'
+##### mouse mm10
+bin_mm10='/liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/mm10_regions_all_sorted.bed'
 
 ### motif h5 files
-motif_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/motif'
+##### human hg38
+motif_hg38_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/motif'
+##### mouse mm10
+motif_mm10_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_mouse/hdf5s/motif'
 
 ### DNase bam files
-DNase_bam_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/bams/with_filter'
+##### human hg38
+DNase_bam_hg38_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/bams/with_filter'
+##### mouse mm10
+DNase_bam_mm10_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_mouse/bams/with_filter'
 
 ### DNase 5' counts bigwig files
-DNase_bigwig_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/bigwigs'
+##### human hg38
+DNase_bigwig_hg38_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/bigwigs'
+##### mouse mm10
+DNase_bigwig_mm10_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_mouse/bigwigs'
 
 ### DNase signal h5 files
-DNase_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/DNase'
+##### human hg38
+DNase_hg38_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/DNase'
+##### mouse mm10
+DNase_mm10_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_mouse/hdf5s/DNase'
+
 
 ### TF json file
 TF_json_folder='/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/TFs'

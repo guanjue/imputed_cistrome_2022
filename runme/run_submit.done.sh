@@ -24,7 +24,7 @@ working_dir0='/liulab/gjxiang/projects/test_impute_cistrome/test_GATA1'
 script_dir='/liulab/gjxiang/projects/test_impute_cistrome/imputed_cistrome_2022'
 
 ### hg38 200bp bins with 50bp sliding window
-bins='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hg38.200_50slide.bins.bed'
+bins='/liulab/gjxiang/projects/impute_cistrome/cistrome/cistrome_impute_hg38_config/hg38_regions_all_sorted.bed'
 ### DNase-seq metadata
 DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
 ### TF ChIP-seq metadata
