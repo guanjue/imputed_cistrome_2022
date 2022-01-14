@@ -4,13 +4,13 @@ thread_num=4
 #TF='CTCF'
 declare -a chr_all=("chr1" "chr2")
 
-pksumit_folder='/liulab/jfan/projects/impute_cistrome/cistrome/human_TF_summits/'
-pk_folder='/liulab/jfan/projects/impute_cistrome/cistrome/human_TF_peaks/'
-train_test_header_file='/homes1/gxiang/projects/impute_cistrome/cistrome_impute_results_human8/train_test_header_file.txt'
+#pksumit_folder='/liulab/jfan/projects/impute_cistrome/cistrome/human_TF_summits/'
+#pk_folder='/liulab/jfan/projects/impute_cistrome/cistrome/human_TF_peaks/'
+#train_test_header_file='/homes1/gxiang/projects/impute_cistrome/cistrome_impute_results_human8/train_test_header_file.txt'
 
 train_cl_ct_tis=$2
 
-bins='/homes1/gxiang/projects/impute_cistrome/cistrome_impute_results_human8/hg38.200_50slide.bins.bed'
+#bins='/homes1/gxiang/projects/impute_cistrome/cistrome_impute_results_human8/hg38.200_50slide.bins.bed'
 
 pksumit_folder=$3
 pk_folder=$4

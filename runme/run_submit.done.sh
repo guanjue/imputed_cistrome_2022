@@ -22,6 +22,8 @@ user_test_DNase_list=F
 working_dir0='/liulab/gjxiang/projects/impute_cistrome/B_LYMPHOCYTE'
 ### set script directory
 script_dir='/liulab/gjxiang/projects/impute_cistrome/scripts_done'
+### hg38 200bp bins with 50bp sliding window
+bins='/liulab/gjxiang/projects/impute_cistrome/scripts_done/config_file/hg38.200_50slide.bins.bed'
 ### set input file directory
 DNase_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/DNase'
 TF_json_folder='/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/TFs'
@@ -33,8 +35,6 @@ motif_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_result
 DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
 ### TF ChIP-seq metadata
 TF_info=$script_dir'/config_file/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls'
-### hg38 200bp bins with 50bp sliding window
-bins=$script_dir'/config_file/hg38.200_50slide.bins.bed'
 
 
 ### submit steps as sbatch jobs ######
