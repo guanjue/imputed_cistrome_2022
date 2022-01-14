@@ -1,18 +1,18 @@
 # impute_cistrome_GX
 
 ## Install conda env
-### conda-4.11.0 update at 01/13/2022
+##### conda-4.11.0 update at 01/13/2022
 ```
 conda update -n base conda
 ```
 
-### conda install python3 and packages
+##### conda install python3 and packages
 ```
 conda create -n impute_cistrome_2022 python=3.9 r=4.1 fire pandas numpy scipy h5py matplotlib \
 seaborn hyperopt pybedtools pyBigWig lightgbm=3.1.1 pyyaml
 ```
 
-### activate conda and install two packages that is not available in conda
+##### activate conda and install two packages that is not available in conda
 ```
 conda activate impute_cistrome_2022
 pip install sklearn
@@ -27,14 +27,14 @@ cd /liulab/gjxiang/projects/test_impute_cistrome
 git clone https://github.com/guanjue/impute_cistrome_2022.git
 ```
 
-### Step1: Enter working directory & copy input parameter files
+##### Step1: Enter working directory & copy input parameter files
 ```
 mkdir test_GATA1
 cp /liulab/gjxiang/projects/test_impute_cistrome/impute_cistrome_2022/runme/* test_GATA1/
 cd test_GATA1/
 ```
 
-### Step2: Set up parameters in 'run_submit.done.sh' in the 'test_GATA1/' folder ###
+##### Step2: Set up parameters in 'run_submit.done.sh' in the 'test_GATA1/' folder ###
 ```
 ### The parameters in 'run_submit.done.sh' are as follows:
 # set impute TF; training cell type; testing cell type; User defined sample id for DNase data
@@ -66,12 +66,12 @@ motif_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_result
 ######
 ```
 
-### Step3: Run imputed_cistrome_2022
+##### Step3: Run imputed_cistrome_2022
 ```
 bash run_submit.done.sh
 ```
 
-### Step2.0: Get parameters using the following scripts
+##### Step2.0: Get parameters using the following scripts
 ```
 ### Step2.0.1: Select imputed TFs, write them into the 'TF_select.tmp.txt' file
 target_TF_list='TF_select.tmp.txt'
@@ -103,7 +103,9 @@ ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/train/GATA1/selected_motif_hdf5/chr*
 ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.bed
 ### FDR peaks
 ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.bed
-### FDR bedtools merged peaks
+
+### FDR bedtools merged peaks ###
+### Final output predicted peaks ###
 ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.topPK.done.bed
 
 ```
