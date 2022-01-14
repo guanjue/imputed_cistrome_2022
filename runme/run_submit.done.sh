@@ -10,8 +10,8 @@
 #cat TF_train_test.thisRun.list.txt
 
 
-###### run impute_cistrome pipeline ######
-### set impute TF; training cell type; testing cell type; User defined sample id for DNase data
+### The parameters in 'run_submit.done.sh' are as follows:
+# set impute TF; training cell type; testing cell type; User defined sample id for DNase data
 tf=GATA1
 train_ct=K562
 test_ct=NONE_B_LYMPHOCYTE_BLOOD
@@ -19,22 +19,23 @@ user_train_DNase_list=F
 user_test_DNase_list=F
 
 ### set working directory
-working_dir0='/liulab/gjxiang/projects/impute_cistrome/B_LYMPHOCYTE'
+working_dir0='/liulab/gjxiang/projects/test_impute_cistrome/test_GATA1'
 ### set script directory
-script_dir='/liulab/gjxiang/projects/impute_cistrome/scripts_done'
+script_dir='/liulab/gjxiang/projects/test_impute_cistrome/imputed_cistrome_2022'
+
 ### hg38 200bp bins with 50bp sliding window
-bins='/liulab/gjxiang/projects/impute_cistrome/scripts_done/config_file/hg38.200_50slide.bins.bed'
-### set input file directory
+bins='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hg38.200_50slide.bins.bed'
+### DNase-seq metadata
+DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
+### TF ChIP-seq metadata
+TF_info=$script_dir'/config_file/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls'
+
+### set other input file directory
 DNase_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/DNase'
 TF_json_folder='/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/TFs'
 pksumit_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_summits/'
 pk_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_peaks/'
 motif_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/motif'
-
-### DNase-seq metadata
-DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
-### TF ChIP-seq metadata
-TF_info=$script_dir'/config_file/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls'
 
 
 ### submit steps as sbatch jobs ######

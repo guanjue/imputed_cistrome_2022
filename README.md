@@ -31,6 +31,7 @@ git clone https://github.com/guanjue/impute_cistrome_2022.git
 ```
 mkdir test_GATA1
 cp /liulab/gjxiang/projects/test_impute_cistrome/impute_cistrome_2022/runme/* test_GATA1/
+cd test_GATA1/
 ```
 
 ### Step2: Set up parameters in 'run_submit.done.sh' in the 'test_GATA1/' folder ###
@@ -48,26 +49,25 @@ working_dir0='/liulab/gjxiang/projects/test_impute_cistrome/test_GATA1'
 ### set script directory
 script_dir='/liulab/gjxiang/projects/test_impute_cistrome/imputed_cistrome_2022'
 
-### set input file directory
+### hg38 200bp bins with 50bp sliding window
+bins='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hg38.200_50slide.bins.bed'
+### DNase-seq metadata
+DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
+### TF ChIP-seq metadata
+TF_info=$script_dir'/config_file/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls'
+
+### set other input file directory
 DNase_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/DNase'
 TF_json_folder='/liulab/gjxiang/projects/impute_cistrome/get_motif_difscore/TFs'
 pksumit_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_summits/'
 pk_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome/human_TF_peaks/'
 motif_h5_folder='/liulab/gjxiang/projects/impute_cistrome/cistrome_impute_results_human/hdf5s/motif'
 
-### DNase-seq metadata
-DNase_info=$script_dir'/config_file/cistrome.metadata.Homo_sapiens.DNase.withheader.txt'
-### TF ChIP-seq metadata
-TF_info=$script_dir'/config_file/cistromeDB_human_TF_ChIP_samples_meta_info_peaks_2000_motifs_enrichment_FRiP_0.01_UDHS_0.7.xls'
-### hg38 200bp bins with 50bp sliding window
-bins=$script_dir'/config_file/hg38.200_50slide.bins.bed'
 ######
 ```
 
 ### Step3: Run imputed_cistrome_2022
 ```
-# enter working directory
-cd test_GATA1
 bash run_submit.done.sh
 ```
 
