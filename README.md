@@ -91,20 +91,20 @@ cat TF_train_test.thisRun.list.txt
 ## Outputs
 ```
 ###### output files ######
-#cd $working_dir0
+cd $working_dir0
 ### For each run, the output folder will be named as $tf'_'$train_ct'_'$test_ct , e.g GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD
 ### DNase 5' end count h5 files
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/hdf5s/DNase/K562_NONE_B_LYMPHOCYTE_BLOOD/DNASE_bam_5_mer_variable_bp_all_samples_lightGBM_chr*_all_cell_types.h5
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/hdf5s/DNase/K562_NONE_B_LYMPHOCYTE_BLOOD/DNASE_bam_5_mer_variable_bp_all_samples_lightGBM_chr*_all_cell_types.h5
 ### DNase 5' end count h5 files Quantile transformed
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/hdf5s/DNase/K562_NONE_B_LYMPHOCYTE_BLOOD/DNASE_bam_5_mer_variable_bp_all_samples_lightGBM_chr*_all_cell_types.QT.ave.h5
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/hdf5s/DNase/K562_NONE_B_LYMPHOCYTE_BLOOD/DNASE_bam_5_mer_variable_bp_all_samples_lightGBM_chr*_all_cell_types.QT.ave.h5
 ### motif score h5 files
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/train/GATA1/selected_motif_hdf5/chr*_motif_features_lightGBM.h5
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/train/GATA1/selected_motif_hdf5/chr*_motif_features_lightGBM.h5
 ### lgb predicted scores
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.bed
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.bed
 ### FDR peaks
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.bed
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.bed
 ### FDR bedtools merged peaks
-#ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.topPK.done.bed
+ls -ltrh GATA1_K562_NONE_B_LYMPHOCYTE_BLOOD/lgbmodel/GATA1/K562_NONE_B_LYMPHOCYTE_BLOOD/predict.GATA1.fdr.topPK.done.bed
 
 ```
 
