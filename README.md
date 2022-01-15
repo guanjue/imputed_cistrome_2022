@@ -27,11 +27,11 @@ cd /liulab/gjxiang/projects/test_impute_cistrome
 git clone https://github.com/guanjue/impute_cistrome_2022.git
 ```
 
-##### Step1: Enter working directory & copy input parameter files
+##### Step1: Create & Enter a new working folder 'test_GATA1/' & copy input parameter files
 ```
 mkdir test_GATA1
-cp /liulab/gjxiang/projects/test_impute_cistrome/impute_cistrome_2022/runme/* test_GATA1/
 cd test_GATA1/
+cp /liulab/gjxiang/projects/test_impute_cistrome/impute_cistrome_2022/runme/* ./
 ```
 
 ##### Step2: Set up parameters in 'run_submit.done.sh' in the 'test_GATA1/' folder ###
